@@ -9,6 +9,7 @@ find_package(catkin REQUIRED COMPONENTS
   sensor_msgs
   nav_msgs
   message_runtime
+  costmap_converter
 )
 
 add_message_files(
@@ -20,6 +21,9 @@ add_message_files(
   InterPRs.msg
   Loop.msg
   Loops.msg
+  TrajectoryMsg.msg
+  TrajectoryPointMsg.msg
+  FeedbackMsg.msg
 )
 
 add_service_files(
@@ -33,6 +37,7 @@ generate_messages(
   sensor_msgs  
   std_msgs
   nav_msgs
+  costmap_converter
 )
 
 
